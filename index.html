@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Тестовое задание</title>
+    <link rel="stylesheet" href="./styles/normalize.css" />
+    <link rel="stylesheet" href="./styles/style.css" />
+  </head>
+  <body>
+    <header>
+      <div class="container">
+        <form class="parameters">
+          <p>Настройте ширину и длину поля, при умножении должно быть четное число:
+            <br> <span class="error hide">Ошибка: нечетное число</span>
+            <span class="error hide">Ошибка: максимальное значение 10</span>
+          </p>
+      	  <label for="width">Ширина</label>
+          <div class="input-field mb">
+      	    <input type="number" id="width" value="4" max="10">
+          </div>
+          <label for="length">Длина</label>
+          <div class="input-field mb">
+            <input type="number" id="length" value="4" max="10">
+          </div>
+          <input type="button" class="button light" value="Начать игру">
+        </form>
+        <div class="button toggle-form">Закрыть настройки</div>
+      </div>
+    </header>
+    <main><div class="container"></div></main>
+    <footer class="container">
+      <a href="#" class="button light hidden">Сыграть еще раз</a>
+    </footer>
+    <script type="text/javascript" src="./js/pairs-game.js"></script>
+  </body>
+</html>
